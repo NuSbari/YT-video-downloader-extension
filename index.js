@@ -1,9 +1,10 @@
 const urlEl = document.getElementById("url-el");
 let youtubeURL = "";
 let videoID = "";
+const API_KEY = "AIzaSyCgv2CBzqfZXS7ZJ69Q6uV1_Yrx-Ufb4xU";
 
 function getData(videoID){
-    fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoID}&key=AIzaSyCgv2CBzqfZXS7ZJ69Q6uV1_Yrx-Ufb4xU`)
+    fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoID}&key=${API_KEY}`)
     .then(response => {
         if (!response.ok) {
             throw new Error("Il link inserito non è valido o il video non esiste");
