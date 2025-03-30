@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #0F0F0F; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    width: 470px;
+    height: 370px;
+    border-radius: 15px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#url-el {
+    width: 420px;
+    height: 30px;
+    border-radius: 15px;
+    background: #121212;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    border: 0.5px solid #c6c6c6 !important;
+    box-shadow: inset 0 1px 2px #eee;
+    padding: 0 4px 0 16px;
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+
+#thumbnail-el {
+    width: 326px;
+    height: 183px;
+    aspect-ratio: 326 / 183;
+    border-radius: 15px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    /* per centrare il contenuto all’interno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-el {
+    width: 326px;
+    height: 20px;
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 200;
+    white-space: normal;
+    text-align: center;
+    /* per centrare il testo verticalmente, se serve */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-mp4-el, .download-mp3-el {
+    width: 170px;
+    height: 50px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #272727;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0 5px; /* margine orizzontale */
+}
+
+.download-mp4-el:hover, .download-mp3-el:hover {
+    background-color: #424040;
+    cursor: pointer;
+}
